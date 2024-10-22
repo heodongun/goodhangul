@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Page</title>
+  <script src="/script.js" defer></script>
+  <style>
+    .suggestions {
+      border: 1px solid #ddd;
+      max-width: 300px;
+    }
+    .suggestions li {
+      padding: 8px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .suggestions li:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Search</h1>
+  <input type="text" id="search-input" placeholder="Type to search..." autocomplete="off">
+  <ul id="suggestions-list" class="suggestions"></ul>
+</body>
+</html>
